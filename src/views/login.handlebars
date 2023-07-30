@@ -1,0 +1,33 @@
+<div class="card mx-auto bg-dark" style="width: 18rem;">
+  <img
+    src="https://png.pngtree.com/element_origin_min_pic/00/00/06/12575cb97a22f0f.jpg"
+    class="card-img-top"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">Tienes cuenta?</h5>
+    <div>
+
+      <form id="formulario" method="POST" action="/api/sessions/login">
+        <ul>
+          <label for="email">email: </label>
+          <input type="text" id="email" name="email" />
+        </ul>
+        <ul>
+          <label for="password">Password: </label>
+          <input type="text" id="password" name="password" />
+        </ul>
+        <ul class="button">
+          <button class="btn btn-primary" type="submit">Ingresar</button>
+        </ul>
+      </form>
+      <hr />
+
+      <form action="/api/sessions/registro">
+        <h6>No estas registrado? </h6>
+        <button type="submit" class="btn btn-primary">Registrarme</button>
+      </form>
+    </div>
+
+  </div>
+</div>
