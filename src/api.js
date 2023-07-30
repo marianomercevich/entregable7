@@ -39,6 +39,11 @@ app.use('/api/products', productsRouter);
 app.use('/api/carts', cartsRouter);
 app.use("/api/sessions", sessionsRouter)
 
+
+/* http://localhost:8080/api/sessions/githubcallback
+Client ID: Iv1.2086dbfa0e4cbdef
+ Client secret: 72fed1b52ef5db6b8e2b9458600fd03fdb872ba9 */
+
 await mongoose.connect(
     "mongodb+srv://CoderUser:123@cluster0.ghinxw0.mongodb.net/ProyectoFinal"
 );
