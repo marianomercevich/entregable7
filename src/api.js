@@ -18,18 +18,15 @@ app.engine('handlebars', handlebars.engine());
 app.set('views', './src/views');
 app.set('view engine', 'handlebars');
 app.use(express.static('./src/public'));
-
 app.use(express.urlencoded({ extended: true }));
 
-app.use(session({
-  store: MongoStore.create({
+app.use(session({ store: MongoStore.create({
       mongoUrl: 'mongodb+srv://CoderUser:123@cluster0.ghinxw0.mongodb.net',
       dbName: 'sessions',
       mongoOptions: {
           useNewUrlParser: true,
           useUnifiedTopology: true
-      }
-  }),
+      } }),
   secret: 'victoriasecret',
   resave: true,
   saveUninitialized: true
